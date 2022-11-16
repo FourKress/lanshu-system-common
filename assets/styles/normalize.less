@@ -1,0 +1,291 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+span,
+label,
+em,
+i,
+strong,
+img,
+table,
+thead,
+tbody,
+th,
+td,
+th,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+
+  &:after,
+  &:before {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font: 12px/1.5 Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  color: #304156;
+}
+
+a {
+  outline: 0;
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:active {
+  outline-width: 0;
+}
+
+img {
+  border-style: none;
+}
+
+ul,
+ol,
+li,
+dl,
+dd {
+  list-style: none;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  /*make el can get attributes form parent on IE */
+  font-size: 100%;
+  border: none;
+  background: none;
+  appearance: none;
+  outline: none;
+  text-transform: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="search"],
+button {
+  cursor: pointer;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background: none !important;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  opacity: 1;
+  color: #a1a1a1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.r-blue {
+  color: #5A8DEE;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    color: #719DF0;
+  }
+}
+
+.r-red {
+  color: @danger;
+}
+
+.r-gray {
+  color: @regularText;
+}
+
+.r-green {
+  color: @regular;
+}
+
+.r-warning {
+  color: @warning;
+}
+
+.r-black {
+  color: #000;
+}
+
+.r-placeholder {
+  color: @placeholderText;
+}
+
+.r-form-label {
+  color: #727E8C;
+
+  .el-form-item__label {
+    color: #727E8C;
+  }
+}
+
+.r-form-value {
+  color: #304156;
+}
+
+.v-cursor {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.r-tip {
+  color: #727E8C;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.ft12 {
+  font-size: 12px;
+}
+
+.ft14 {
+  font-size: 14px;
+}
+
+.ft16 {
+  font-size: 16px;
+}
+
+.r-clear {
+  clear: both;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+.mt24 {
+  margin-top: 24px;
+}
+
+.mb0 {
+  margin-bottom: 0px !important;
+}
+
+.mb8 {
+  margin-bottom: 8px !important;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mr17 {
+  margin-right: 17px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr6 {
+  margin-right: 6px;
+}
+
+.ml8 {
+  margin-left: 8px;
+}
+
+.lh20 {
+  line-height: 20px;
+}
+
+.lh14 {
+  line-height: 14px;
+}
+
+.w100 {
+  width: 100%;
+}

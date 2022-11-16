@@ -1,0 +1,895 @@
+@font-face {
+  font-family: "v-icon-font"; /* Project id 2432750 */
+  src: url('iconfont.woff2?t=1668414553385') format('woff2'),
+       url('iconfont.woff?t=1668414553385') format('woff'),
+       url('iconfont.ttf?t=1668414553385') format('truetype');
+}
+
+.v-icon-font {
+  font-family: "v-icon-font" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.v-icon-qiyeweixin:before {
+  content: "\e6c8";
+}
+
+.v-icon-jiasu:before {
+  content: "\e70c";
+}
+
+.v-icon-kuaisu_jiasu:before {
+  content: "\e70d";
+}
+
+.v-icon-guanji:before {
+  content: "\e7af";
+}
+
+.v-icon-jinyong:before {
+  content: "\e70b";
+}
+
+.v-icon-nav-park-settings:before {
+  content: "\e6fb";
+}
+
+.v-icon-nav-reconciliation-statement-management:before {
+  content: "\e6fc";
+}
+
+.v-icon-nav-assign:before {
+  content: "\e6fd";
+}
+
+.v-icon-nav-Task-management:before {
+  content: "\e6fe";
+}
+
+.v-icon-icon_system:before {
+  content: "\e657";
+}
+
+.v-icon-reimbursement:before {
+  content: "\e658";
+}
+
+.v-icon-process_configuration:before {
+  content: "\e65d";
+}
+
+.v-icon-other:before {
+  content: "\e65e";
+}
+
+.v-icon-channel:before {
+  content: "\e65f";
+}
+
+.v-icon-user_registration:before {
+  content: "\e685";
+}
+
+.v-icon-park_reminder:before {
+  content: "\e689";
+}
+
+.v-icon-operation_reminder:before {
+  content: "\e68d";
+}
+
+.v-icon-bi:before {
+  content: "\e68c";
+}
+
+.v-icon-crm_reminder:before {
+  content: "\e68a";
+}
+
+.v-icon-taxation_services:before {
+  content: "\e68b";
+}
+
+.v-icon-icon-sender:before {
+  content: "\e6ff";
+}
+
+.v-icon-icon_cylinder:before {
+  content: "\e68e";
+}
+
+.v-icon-icon_Partner:before {
+  content: "\e68f";
+}
+
+.v-icon-icon_increase:before {
+  content: "\e691";
+}
+
+.v-icon-icon_existing:before {
+  content: "\e692";
+}
+
+.v-icon-icon_left:before {
+  content: "\e69c";
+}
+
+.v-icon-icon_settlein:before {
+  content: "\e700";
+}
+
+.v-icon-icon_decline:before {
+  content: "\e702";
+}
+
+.v-icon-icon_logout:before {
+  content: "\e703";
+}
+
+.v-icon-icon_fiscal:before {
+  content: "\e704";
+}
+
+.v-icon-icon_Cockpit:before {
+  content: "\e705";
+}
+
+.v-icon-icon_curve:before {
+  content: "\e706";
+}
+
+.v-icon-icon_right:before {
+  content: "\e707";
+}
+
+.v-icon-icon_Politics:before {
+  content: "\e708";
+}
+
+.v-icon-left_ban:before {
+  content: "\e709";
+}
+
+.v-icon-right_ban:before {
+  content: "\e70a";
+}
+
+.v-icon-copy-icon:before {
+  content: "\e62b";
+}
+
+.v-icon-edit:before {
+  content: "\e6b8";
+}
+
+.v-icon-success:before {
+  content: "\e6bb";
+}
+
+.v-icon-collapse:before {
+  content: "\e6bd";
+}
+
+.v-icon-home:before {
+  content: "\e6be";
+}
+
+.v-icon-full-screen:before {
+  content: "\e6bf";
+}
+
+.v-icon-tips:before {
+  content: "\e6c0";
+}
+
+.v-icon-arrow-down:before {
+  content: "\e6c2";
+}
+
+.v-icon-arrow-up:before {
+  content: "\e6c3";
+}
+
+.v-icon-search:before {
+  content: "\e701";
+}
+
+.v-icon-close:before {
+  content: "\e6ca";
+}
+
+.v-icon-error:before {
+  content: "\e62d";
+}
+
+.v-icon-prompt-success:before {
+  content: "\e633";
+}
+
+.v-icon-warn:before {
+  content: "\e63b";
+}
+
+.v-icon-close-screen:before {
+  content: "\e648";
+}
+
+.v-icon-icon-avatar:before {
+  content: "\e64f";
+}
+
+.v-icon-menu-staff-management:before {
+  content: "\e651";
+}
+
+.v-icon-login-password:before {
+  content: "\e659";
+}
+
+.v-icon-login-user:before {
+  content: "\e65a";
+}
+
+.v-icon-phone:before {
+  content: "\e65b";
+}
+
+.v-icon-back:before {
+  content: "\e62c";
+}
+
+.v-icon-qr-code:before {
+  content: "\e65c";
+}
+
+.v-icon-addition:before {
+  content: "\e640";
+}
+
+.v-icon-delete:before {
+  content: "\e63f";
+}
+
+.v-icon-menu-user-center:before {
+  content: "\e652";
+}
+
+.v-icon-subtraction:before {
+  content: "\e64e";
+}
+
+.v-icon-icon-enterprise:before {
+  content: "\e665";
+}
+
+.v-icon-icon-edit:before {
+  content: "\e62f";
+}
+
+.v-icon-icon-more:before {
+  content: "\e666";
+}
+
+.v-icon-followed:before {
+  content: "\e650";
+}
+
+.v-icon-not-following:before {
+  content: "\e662";
+}
+
+.v-icon-not-reminded:before {
+  content: "\e663";
+}
+
+.v-icon-reminded:before {
+  content: "\e664";
+}
+
+.v-icon-icon-dropupload:before {
+  content: "\e655";
+}
+
+.v-icon-icon-prompt:before {
+  content: "\e631";
+}
+
+.v-icon-spread:before {
+  content: "\e667";
+}
+
+.v-icon-retract:before {
+  content: "\e668";
+}
+
+.v-icon-icon-Selected:before {
+  content: "\e64c";
+}
+
+.v-icon-not-rated:before {
+  content: "\e630";
+}
+
+.v-icon-rated:before {
+  content: "\e636";
+}
+
+.v-icon-menu-channel-management:before {
+  content: "\e66c";
+}
+
+.v-icon-menu-crm-setting-management:before {
+  content: "\e66e";
+}
+
+.v-icon-menu-customer-management:before {
+  content: "\e66a";
+}
+
+.v-icon-menu-setting-management:before {
+  content: "\e656";
+}
+
+.v-icon-rotation-left:before {
+  content: "\e660";
+}
+
+.v-icon-rotation-right:before {
+  content: "\e661";
+}
+
+.v-icon-menu-crm-settin-custom:before {
+  content: "\e654";
+}
+
+.v-icon-icon-wait:before {
+  content: "\e63c";
+}
+
+.v-icon-menu-business-assistant:before {
+  content: "\e66b";
+}
+
+.v-icon-menu-park-management:before {
+  content: "\e66d";
+}
+
+.v-icon-menu-park-setting:before {
+  content: "\e66f";
+}
+
+.v-icon-icon-open:before {
+  content: "\e634";
+}
+
+.v-icon-upload-image:before {
+  content: "\e678";
+}
+
+.v-icon-no-image:before {
+  content: "\e643";
+}
+
+.v-icon-unable-upload:before {
+  content: "\e684";
+}
+
+.v-icon-arrow-right:before {
+  content: "\e681";
+}
+
+.v-icon-arrow-left:before {
+  content: "\e682";
+}
+
+.v-icon-clear:before {
+  content: "\e675";
+}
+
+.v-icon-text:before {
+  content: "\e683";
+}
+
+.v-icon-menu-clue-manager:before {
+  content: "\e669";
+}
+
+.v-icon-menu-call-center:before {
+  content: "\e67d";
+}
+
+.v-icon-menu-website-clues:before {
+  content: "\e687";
+}
+
+.v-icon-menu-flow-site:before {
+  content: "\e688";
+}
+
+.v-icon-menu-channel-site:before {
+  content: "\e686";
+}
+
+.v-icon-menu-protocol-management:before {
+  content: "\e67b";
+}
+
+.v-icon-flow-pass:before {
+  content: "\e670";
+}
+
+.v-icon-flow-delete:before {
+  content: "\e671";
+}
+
+.v-icon-flow-reject:before {
+  content: "\e672";
+}
+
+.v-icon-flow-fail:before {
+  content: "\e673";
+}
+
+.v-icon-flow-wait:before {
+  content: "\e674";
+}
+
+.v-icon-pending-review:before {
+  content: "\e67a";
+}
+
+.v-icon-remove:before {
+  content: "\e694";
+}
+
+.v-icon-view:before {
+  content: "\e653";
+}
+
+.v-icon-icon-download:before {
+  content: "\e63d";
+}
+
+.v-icon-attachment:before {
+  content: "\e698";
+}
+
+.v-icon-address:before {
+  content: "\e696";
+}
+
+.v-icon-name:before {
+  content: "\e697";
+}
+
+.v-icon-expand:before {
+  content: "\e676";
+}
+
+.v-icon-putaway:before {
+  content: "\e677";
+}
+
+.v-icon-icon-lastyear:before {
+  content: "\e64b";
+}
+
+.v-icon-login-code:before {
+  content: "\e699";
+}
+
+.v-icon-login-computer:before {
+  content: "\e69a";
+}
+
+.v-icon-icon-replace:before {
+  content: "\e64a";
+}
+
+.v-icon-refresh:before {
+  content: "\e69b";
+}
+
+.v-icon-mailbox:before {
+  content: "\e695";
+}
+
+.v-icon-cost-instal:before {
+  content: "\e67c";
+}
+
+.v-icon-Changeenterprise:before {
+  content: "\e627";
+}
+
+.v-icon-Channelapplication:before {
+  content: "\e628";
+}
+
+.v-icon-Clientagreement:before {
+  content: "\e629";
+}
+
+.v-icon-Channelreissue:before {
+  content: "\e62a";
+}
+
+.v-icon-Channeladvance:before {
+  content: "\e62e";
+}
+
+.v-icon-Deregistration:before {
+  content: "\e632";
+}
+
+.v-icon-delay:before {
+  content: "\e641";
+}
+
+.v-icon-contract:before {
+  content: "\e642";
+}
+
+.v-icon-Cooperativecustomer:before {
+  content: "\e644";
+}
+
+.v-icon-Enterpriseadvances:before {
+  content: "\e649";
+}
+
+.v-icon-Enterprisereissue:before {
+  content: "\e67e";
+}
+
+.v-icon-free:before {
+  content: "\e69d";
+}
+
+.v-icon-icon-enterprises:before {
+  content: "\e69e";
+}
+
+.v-icon-Invoice:before {
+  content: "\e69f";
+}
+
+.v-icon-invalid:before {
+  content: "\e6a0";
+}
+
+.v-icon-Importdata:before {
+  content: "\e6a1";
+}
+
+.v-icon-Inputdata:before {
+  content: "\e6a2";
+}
+
+.v-icon-migrationenterprise:before {
+  content: "\e6a4";
+}
+
+.v-icon-Pettycash:before {
+  content: "\e6a5";
+}
+
+.v-icon-Privatelibraries:before {
+  content: "\e6a6";
+}
+
+.v-icon-rechecking:before {
+  content: "\e6a7";
+}
+
+.v-icon-Querying:before {
+  content: "\e6a8";
+}
+
+.v-icon-newlisting:before {
+  content: "\e6aa";
+}
+
+.v-icon-Taxpaymentreceipt:before {
+  content: "\e6ab";
+}
+
+.v-icon-Refunds:before {
+  content: "\e6ac";
+}
+
+.v-icon-Write-Off:before {
+  content: "\e6ad";
+}
+
+.v-icon-potentialclients1:before {
+  content: "\e6ae";
+}
+
+.v-icon-Settlementagreement:before {
+  content: "\e6a9";
+}
+
+.v-icon-icon-Channelaudit:before {
+  content: "\e6b4";
+}
+
+.v-icon-icon-Channeladvancepayment:before {
+  content: "\e6b5";
+}
+
+.v-icon-icon-Useraudit:before {
+  content: "\e6b6";
+}
+
+.v-icon-icon-Enterpriseaudit:before {
+  content: "\e6b7";
+}
+
+.v-icon-icon-Invoice:before {
+  content: "\e6b9";
+}
+
+.v-icon-icon-delay:before {
+  content: "\e6ba";
+}
+
+.v-icon-icon-Expensewrite-off:before {
+  content: "\e6bc";
+}
+
+.v-icon-icon-Agreementreview:before {
+  content: "\e6c1";
+}
+
+.v-icon-icon-Enterpriseadvances:before {
+  content: "\e6c4";
+}
+
+.v-icon-icon-Enterprisereissue:before {
+  content: "\e6c5";
+}
+
+.v-icon-icon-Theinvoiceisvoid:before {
+  content: "\e6c6";
+}
+
+.v-icon-icon-Pettycash:before {
+  content: "\e6c7";
+}
+
+.v-icon-icon-Reconciliationstatement:before {
+  content: "\e6cb";
+}
+
+.v-icon-icon-Channelreissue:before {
+  content: "\e6cc";
+}
+
+.v-icon-icon-free:before {
+  content: "\e6cd";
+}
+
+.v-icon-icon-Refunds:before {
+  content: "\e6ce";
+}
+
+.v-icon-Invoicereview:before {
+  content: "\e6cf";
+}
+
+.v-icon-icon-Taxpaymentreceipt:before {
+  content: "\e6d0";
+}
+
+.v-icon-icon-perfectinformation:before {
+  content: "\e6d1";
+}
+
+.v-icon-Changechannel:before {
+  content: "\e6d2";
+}
+
+.v-icon-flow-withdraw:before {
+  content: "\e679";
+}
+
+.v-icon-Pdf:before {
+  content: "\e638";
+}
+
+.v-icon-icon-close-full-screen:before {
+  content: "\e690";
+}
+
+.v-icon-icon-full-screen:before {
+  content: "\e693";
+}
+
+.v-icon-nav-clue-management:before {
+  content: "\e6a3";
+}
+
+.v-icon-nav-call-center-management:before {
+  content: "\e6af";
+}
+
+.v-icon-nav-web-management:before {
+  content: "\e6b0";
+}
+
+.v-icon-nav-customer-management:before {
+  content: "\e6b1";
+}
+
+.v-icon-nav-agreement-management:before {
+  content: "\e6b2";
+}
+
+.v-icon-nav-park-management:before {
+  content: "\e6b3";
+}
+
+.v-icon-nav-reconciliation-statementmanagement:before {
+  content: "\e6d3";
+}
+
+.v-icon-nav-channel-management:before {
+  content: "\e6d4";
+}
+
+.v-icon-nav-duty-paid-proof-management:before {
+  content: "\e6d5";
+}
+
+.v-icon-nav-enterprise-management:before {
+  content: "\e6d6";
+}
+
+.v-icon-nav-policy:before {
+  content: "\e6d7";
+}
+
+.v-icon-nav-billing-management:before {
+  content: "\e6d8";
+}
+
+.v-icon-nav-invoicing-review:before {
+  content: "\e6d9";
+}
+
+.v-icon-nav-checklist:before {
+  content: "\e6da";
+}
+
+.v-icon-nav-company-list:before {
+  content: "\e6db";
+}
+
+.v-icon-nav-client-list:before {
+  content: "\e6dc";
+}
+
+.v-icon-nav-consignee-address:before {
+  content: "\e6dd";
+}
+
+.v-icon-nav-registered-user-management:before {
+  content: "\e6de";
+}
+
+.v-icon-nav-receipt-voucher:before {
+  content: "\e6df";
+}
+
+.v-icon-nav-supporting-materials:before {
+  content: "\e6e0";
+}
+
+.v-icon-nav-registered-users:before {
+  content: "\e6e1";
+}
+
+.v-icon-nav-user-accounts:before {
+  content: "\e6e2";
+}
+
+.v-icon-nav-contract-management:before {
+  content: "\e6e3";
+}
+
+.v-icon-nav-accounts-receivable:before {
+  content: "\e6e4";
+}
+
+.v-icon-nav-accounts-payable:before {
+  content: "\e6e5";
+}
+
+.v-icon-nav-collection-record:before {
+  content: "\e6e6";
+}
+
+.v-icon-nav-fee-billing:before {
+  content: "\e6e7";
+}
+
+.v-icon-nav-settlement-database:before {
+  content: "\e6e8";
+}
+
+.v-icon-nav-reserve-fund:before {
+  content: "\e6e9";
+}
+
+.v-icon-nav-reward-commission:before {
+  content: "\e6ea";
+}
+
+.v-icon-nav-outbound-data-query:before {
+  content: "\e6eb";
+}
+
+.v-icon-nav-overdue-statistics:before {
+  content: "\e6ec";
+}
+
+.v-icon-nav-settled-analysis:before {
+  content: "\e6ed";
+}
+
+.v-icon-nav-crmconversion-analysis:before {
+  content: "\e6ee";
+}
+
+.v-icon-nav-message-center:before {
+  content: "\e6ef";
+}
+
+.v-icon-nav-business-entry:before {
+  content: "\e6f0";
+}
+
+.v-icon-nav-wait-for-me:before {
+  content: "\e6f1";
+}
+
+.v-icon-nav-initiated:before {
+  content: "\e6f2";
+}
+
+.v-icon-nav-user-management:before {
+  content: "\e6f3";
+}
+
+.v-icon-nav-staff-management:before {
+  content: "\e6f4";
+}
+
+.v-icon-nav-message-management:before {
+  content: "\e6f5";
+}
+
+.v-icon-nav-message-list:before {
+  content: "\e6f6";
+}
+
+.v-icon-nav-channel-settings:before {
+  content: "\e6f7";
+}
+
+.v-icon-nav-CRM-settings:before {
+  content: "\e6f8";
+}
+
+.v-icon-nav-financial-settings:before {
+  content: "\e6f9";
+}
+
+.v-icon-nav-basic-settings:before {
+  content: "\e6fa";
+}
+
