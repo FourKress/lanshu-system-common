@@ -3,37 +3,38 @@ module.exports = function (api) {
 
   const presets = [
     [
-      '@babel/preset-env',
+      "@babel/preset-env",
       {
         modules: false,
         targets: {
-          browsers: ['> 1%', 'last 5 versions', 'ie >= 9'],
+          browsers: ["> 1%", "last 5 versions", "ie >= 9"],
         },
-        useBuiltIns: 'usage',
+        useBuiltIns: "usage",
         corejs: 3,
       },
     ],
-    '@vue/babel-preset-jsx',
+    "@vue/babel-preset-jsx",
   ];
   const plugins = [
-    '@babel/plugin-transform-runtime',
+    "@babel/plugin-transform-runtime",
     [
-      '@babel/plugin-proposal-class-properties',
+      "@babel/plugin-proposal-class-properties",
       {
         loose: false,
       },
     ],
     [
-      '@babel/plugin-proposal-decorators',
+      "@babel/plugin-proposal-decorators",
       {
         legacy: true,
       },
     ],
     [
-      'component',
+      "component",
       {
-        libraryName: 'element-ui',
-        styleLibraryName: '~wd-common/assets/styles/element/theme',
+        libraryName: "element-ui",
+        styleLibraryName:
+          "~/node_modules/@lanshu/system-common/assets/styles/element/theme",
       },
     ],
   ];
