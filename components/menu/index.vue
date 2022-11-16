@@ -38,7 +38,7 @@
 
 <script>
 import _ from 'lodash';
-import { groupRoute } from '../../../src/router/router-list';
+import { groupRoute } from '@/router/router-list';
 
 export default {
   props: {
