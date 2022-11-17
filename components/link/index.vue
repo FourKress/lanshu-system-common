@@ -18,19 +18,16 @@ export default {
     target: {
       type: String,
     },
-    module: {
-      type: String,
-    },
   },
   computed: {
     href() {
-      const { path, module } = this;
+      const { path } = this;
 
       if (/^(\/\/|http)/.test(path)) {
         return path;
       }
-      // 如果以/开头则被视为vue路由，构造成一个普通的url链接
-      return generateUrl({ module, path });
+
+      return generateUrl({ path });
     },
   },
   methods: {},

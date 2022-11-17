@@ -5,7 +5,7 @@
 - 支持完全自定义当前页面的面包屑：crumbs
 - 右侧内容显示：showRight
 - 右侧内返回上一页，自定义返回的路由：toPage
-- 每一级路由跳转都是使用link组件实现，向link组件传递path和module两个参数
+- 每一级路由跳转都是使用link组件实现，向link组件传递path参数
 
 ## Props
 

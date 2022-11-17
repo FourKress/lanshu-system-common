@@ -145,11 +145,10 @@ export function espFormatMoney(money) {
 
 /**
  * 根据路由生成菜单URL
- * @param module 模块/子系统名称
  * @param path 路由路径
  * @returns {string} 完整的地址
  * */
-export function generateUrl({ module, path }) {
+export function generateUrl({ path }) {
   return `${location.origin}/#${path}`;
 }
 
