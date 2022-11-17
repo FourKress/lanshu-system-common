@@ -70,7 +70,7 @@ export default {
   flex-direction: column;
 }
 .v-page-view-crumb {
-  height: 40px;
+  height: 36px;
   padding: 0 16px;
   background-color: #fff;
   z-index: 2;
@@ -135,7 +135,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   height: 50px;
-  padding: 0 24px;
+  padding: 0 16px;
   margin-bottom: 16px;
   &-title {
     font-size: 14px;

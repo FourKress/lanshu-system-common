@@ -1,7 +1,11 @@
 <template>
   <el-container class="frame-view">
     <el-header height="40px">
-      <v-bread-crumb v-if="showCrumb" class="v-page-view-crumb" v-bind="$attrs"></v-bread-crumb>
+      <v-bread-crumb
+        v-if="showCrumb"
+        class="v-page-view-crumb"
+        v-bind="$attrs"
+      ></v-bread-crumb>
     </el-header>
     <el-container>
       <el-aside width="258px" class="frame-aside">
@@ -49,7 +53,7 @@ export default {
     padding: 16px;
   }
   .v-page-view-crumb {
-    height: 40px;
+    height: 36px;
     padding: 0 16px;
     background-color: #fff;
   }

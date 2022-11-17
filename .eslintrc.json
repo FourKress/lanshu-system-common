@@ -19,7 +19,7 @@
   "globals": {
     "CONFIG": "readonly",
     "_": "readonly",
-    "WD_CONFIG": "readonly",
+    "LANSHU_CONFIG": "readonly",
     "ELEMENT": "readonly"
   },
   "rules": {

@@ -1,9 +1,9 @@
-window.WD_CONFIG = {
-  baseURL: '',
+window.LANSHU_CONFIG = {
+  baseURL: '/api',
   // 版本号
   apiVersion: 'v1',
   authKey: 'authKey',
-  domain: 'authDomain',
+  domain: location.hostname,
   defaultUrl: '',
   clientId: '',
 };

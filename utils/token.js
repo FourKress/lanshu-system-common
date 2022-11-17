@@ -6,7 +6,7 @@
 
 import Cookies from 'js-cookie';
 
-const { authKey, domain } = WD_CONFIG || {};
+const { authKey, domain } = LANSHU_CONFIG || {};
 
 // 获取本地token
 export function getToken() {

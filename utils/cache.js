@@ -1,12 +1,12 @@
 /**
  * Localstorage缓存: 对账号进行隔离
  * */
-import store from '../store';
+import store from '@/store';
 import { isEmpty } from '.';
 
 function getCacheKey() {
   const { userInfo } = store.state.user;
-  const cacheKey = WD_CONFIG.authKey || 'auth.dev';
+  const cacheKey = LANSHU_CONFIG.authKey || 'auth.dev';
 
   return userInfo.id || cacheKey;
 }
@@ -44,7 +44,7 @@ export function removeCache(keys, id) {
 }
 
 export function getAllSession() {
-  const sessionKey = WD_CONFIG.authKey || 'auth.dev';
+  const sessionKey = LANSHU_CONFIG.authKey || 'auth.dev';
   return JSON.parse(window.localStorage.getItem(sessionKey) || '{}');
 }
 

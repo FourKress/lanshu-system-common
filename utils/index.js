@@ -54,7 +54,8 @@ export function isEmpty(param, isSt = true) {
   const type = getDataType(param);
   if (type === 'array') {
     return param.length === 0;
-  } if (type === 'object') {
+  }
+  if (type === 'object') {
     return Object.keys(param).length === 0;
   }
   return false;
@@ -71,7 +72,7 @@ export function changeToNumber(param) {
     return isNaN(param) ? param : +param;
   }
   if (dataType === 'array') {
-    return param.map(value => changeToNumber(value));
+    return param.map((value) => changeToNumber(value));
   }
   if (dataType === 'object') {
     const obj = {};
@@ -100,7 +101,9 @@ export function getFileType(fileName) {
  * */
 export function getMimeType(fileType) {
   const type = fileType && fileType.toLowerCase();
-  const matchType = Object.keys(DEFAULT_FILE_TYPE).find(key => DEFAULT_FILE_TYPE[key].includes(type));
+  const matchType = Object.keys(DEFAULT_FILE_TYPE).find((key) =>
+    DEFAULT_FILE_TYPE[key].includes(type),
+  );
   return matchType || type;
 }
 
@@ -122,7 +125,7 @@ export function formatMoney(money, num = 2) {
  */
 export function espFormatMoney(money) {
   const type = getDataType(money);
-  if ((['string', 'number'].includes(type)) && !isNaN(money)) {
+  if (['string', 'number'].includes(type) && !isNaN(money)) {
     const num = String(money).split('.');
     num[0] = num[0].replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
     if (num[1]) {
@@ -165,7 +168,9 @@ export function getFromUrl(url) {
       obj[i.split('=')[0]] = i.split('=')[1];
     }
   }
-  return obj.fromurl ? decodeURIComponent(obj.fromurl) : WD_CONFIG.defaultUrl;
+  return obj.fromurl
+    ? decodeURIComponent(obj.fromurl)
+    : LANSHU_CONFIG.defaultUrl;
 }
 
 /**
@@ -222,7 +227,7 @@ export const compareAuth = (auth, auths = []) => {
     authKey = auth;
   }
   if (Array.isArray(authKey)) {
-    const union = authKey.filter(x => compareAuth(x, auths));
+    const union = authKey.filter((x) => compareAuth(x, auths));
     return cover ? union.length === authKey.length : union.length > 0;
   }
   return _.isEmpty(authKey) || auths.includes(authKey);
@@ -246,11 +251,10 @@ export function renderContent(data, column, index) {
     // 单位，会在数据后面添加单位
     unit = '',
   } = column;
-  const {
-    emptyPlaceholder: tableEmptyPlaceholder,
-  } = this;
+  const { emptyPlaceholder: tableEmptyPlaceholder } = this;
   // 自定义格式化内容，优先级最高
-  if (typeof formatter === 'function' && formatter) return formatter(data, column, index);
+  if (typeof formatter === 'function' && formatter)
+    return formatter(data, column, index);
   let value = getDeepValue(data, key);
   // 格式化money
   if (textType === 'money') {
@@ -297,7 +301,12 @@ export function trim(str) {
  */
 export function getDeepValue(target, props, defaultValue) {
   if (isNull(props) || isNull(target)) return defaultValue;
-  const _props = typeof props === 'string' ? props.replace(/\[([a-zA-Z\d]+)\]/g, '.$1').split('.') : Array.isArray(props) ? props : [];
+  const _props =
+    typeof props === 'string'
+      ? props.replace(/\[([a-zA-Z\d]+)\]/g, '.$1').split('.')
+      : Array.isArray(props)
+      ? props
+      : [];
   return _props.reduce((pre, nxt) => {
     if (isNull(pre) || isNull(pre[nxt])) return defaultValue;
     return pre[nxt];
@@ -314,7 +323,7 @@ export function getDeepValue(target, props, defaultValue) {
 export function filterEmptyKey(param, isSt = false) {
   const dataType = getDataType(param);
   if (dataType === 'array') {
-    return param.filter(value => !isEmpty(filterEmptyKey(value, isSt)), isSt);
+    return param.filter((value) => !isEmpty(filterEmptyKey(value, isSt)), isSt);
   }
   if (dataType === 'object') {
     const obj = {};
@@ -364,7 +373,7 @@ export function timestampToFormatText(timestamp) {
   if (isNaN(timestamp)) return '';
 
   const d = Math.floor(timestamp / (24 * 3600));
-  timestamp %= (24 * 3600);
+  timestamp %= 24 * 3600;
 
   const h = Math.floor(timestamp / 3600);
   timestamp %= 3600;
@@ -397,14 +406,14 @@ const escapDecodeCode = {
 // 对字符串进行编码
 export function encode(str) {
   let res = window.encodeURIComponent(str);
-  Object.keys(escapEncodeCode).map(k => {
+  Object.keys(escapEncodeCode).map((k) => {
     res.replace(k, escapEncodeCode[k]);
   });
   return res;
 }
 export function decode(str) {
   let res = str;
-  Object.keys(escapDecodeCode).map(k => {
+  Object.keys(escapDecodeCode).map((k) => {
     res.replace(k, escapDecodeCode[k]);
   });
   return window.decodeURIComponent(res);

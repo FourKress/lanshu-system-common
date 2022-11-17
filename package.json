@@ -11,6 +11,14 @@
   },
   "repository": "",
   "license": "MIT",
+  "prettier": {
+    "singleQuote": true,
+    "semi": true,
+    "stylelintIntegration": true,
+    "eslintIntegration": true,
+    "trailingComma": "all",
+    "htmlWhitespaceSensitivity": "ignore"
+  },
   "dependencies": {
     "accounting": "^0.4.1",
     "axios": "^0.20.0",

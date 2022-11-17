@@ -1,6 +1,10 @@
 <template>
   <div class="v-layout" v-loading.fullscreen.lock="loading">
-    <r-header class="v-layout-header" @collapse="collapse" :isCollapse="isCollapse"></r-header>
+    <r-header
+      class="v-layout-header"
+      @collapse="collapse"
+      :isCollapse="isCollapse"
+    ></r-header>
     <div class="v-layout-content">
       <r-menu
         class="v-layout-menu open"
@@ -12,7 +16,10 @@
         :class="isCollapse ? 'pl200' : 'pl60'"
         @scroll="handleScroll"
       >
-        <router-view @scroll="hasScrollEvent" :key="$route.fullPath"></router-view>
+        <router-view
+          @scroll="hasScrollEvent"
+          :key="$route.fullPath"
+        ></router-view>
       </div>
     </div>
   </div>
@@ -23,7 +30,7 @@ import Cookies from 'js-cookie';
 import RHeader from '../header';
 import RMenu from '../menu';
 
-const { domain } = WD_CONFIG;
+const { domain } = LANSHU_CONFIG;
 export default {
   components: {
     RHeader,

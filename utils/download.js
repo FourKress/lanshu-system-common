@@ -35,7 +35,7 @@ function convertRes2Blob(response) {
 }
 
 //  全局变量
-const { baseURL } = WD_CONFIG || {};
+const { baseURL } = LANSHU_CONFIG || {};
 
 const DEFAULT_HTTP_OPTIONS = {
   timeout: 20000,

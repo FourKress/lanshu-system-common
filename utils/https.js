@@ -7,7 +7,7 @@
 
 import axios from 'axios';
 import qs from 'qs';
-import _ from 'lodash'
+import _ from 'lodash';
 import store from '@/store';
 import { getToken, setToken, removeToken } from './token';
 
@@ -24,9 +24,7 @@ const expandToken = _.debounce(
 );
 
 //  全局变量
-const { baseURL } = WD_CONFIG || {};
-
-const { mock, mockReplace } = CONFIG;
+const { baseURL } = LANSHU_CONFIG || {};
 
 const DEFAULT_HTTP_OPTIONS = {
   timeout: 20000,
@@ -86,15 +84,7 @@ instance.interceptors.request.use(
     config.data = data;
     config.params = params;
     config.method = method.toLowerCase();
-    if (mock) {
-      const mockPre = config.url.match(/\/*([a-zA-Z\-]+)/);
-      if (mock === true || (mock?.length > 0 && mock.includes(mockPre[1]))) {
-        config.baseURL = baseURL;
-        if (mockReplace) {
-          config.url = config.url.replace(mockPre[0], '');
-        }
-      }
-    }
+
     return config;
   },
   (error) => {
