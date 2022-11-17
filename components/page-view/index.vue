@@ -12,8 +12,7 @@
       class="v-page-view-crumb"
       v-bind="$attrs"
     ></v-bread-crumb>
-    <div class="crumb-block" v-else></div>
-    <div class="v-page-view-content-wraper">
+    <div class="v-page-view-content-wraper" :class="{ 'no-crumb': !showCrumb }">
       <div
         class="v-page-view-content"
         :class="{
@@ -81,9 +80,14 @@ export default {
 }
 .v-page-view-content-wraper {
   display: block;
-  height: calc(100vh - 90px);
   overflow-y: auto;
+  height: calc(100vh - 86px);
   padding: 16px;
+
+  &.no-crumb {
+    height: calc(100vh - 50px);
+  }
+
   /deep/.v-page-view-content-wraper {
     height: auto;
   }
@@ -91,12 +95,22 @@ export default {
 .v-page-view-content {
   border-radius: 4px;
   flex: 1;
-  min-height: calc(100vh - 124px);
+  min-height: calc(100vh - 118px);
   margin: 0 auto;
   &.has-header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     padding: 0;
     .v-page-view-content-body {
       padding: 16px;
+
+      flex: 1;
+      max-height: calc(100vh - 168px);
+      overflow-y: auto;
+
       &.no-padding {
         padding: 0;
       }
@@ -135,8 +149,8 @@ export default {
   flex-direction: column;
   justify-content: center;
   height: 50px;
+  min-height: 50px;
   padding: 0 16px;
-  margin-bottom: 16px;
   &-title {
     font-size: 14px;
     font-weight: 600;

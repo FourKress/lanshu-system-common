@@ -35,6 +35,12 @@
 
         <el-dropdown @command="handleCommand" :hide-on-click="false">
           <span class="v-header_user-container">
+            <el-avatar
+              class="v-header_user-container-avatar"
+              :src="userInfo.avatarFileUrl"
+            >
+              <v-icon icon="icon-avatar" size="28"></v-icon>
+            </el-avatar>
             <span class="v-header_user-container__name">
               {{ userInfo.name }}
             </span>

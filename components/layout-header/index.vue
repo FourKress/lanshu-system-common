@@ -1,9 +1,9 @@
 <template>
-  <div class="v-clear" :class="{ 'v-layout-header': true, 'v-layout-header-padding': withContent }">
-    <slot name="title">
+  <div :class="{ 'v-layout-header': true, 'v-layout-header-padding': withContent }">
+    <slot name="title" class="left">
       {{ title }}
     </slot>
-    <span class="v-fr">
+    <span class="right">
       <slot></slot>
     </span>
   </div>
@@ -39,10 +39,25 @@ export default {
   color: #304156;
   font-size: 14px;
   font-weight: bold;
-  line-height: 36px;
+  height: 34px;
+  padding: 8px 0;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    flex: 1;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 .v-layout-header-padding {
-  padding-bottom: 14px;
-  padding-top: 16px;
+  padding-bottom: 3px;
+  padding-top: 7px;
 }
 </style>
