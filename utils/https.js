@@ -37,17 +37,6 @@ const DEFAULT_HTTP_OPTIONS = {
   paramsSerializer(params) {
     return qs.stringify(params, { arrayFormat: 'repeat' });
   },
-  // 非200的响应全部进入reject
-  // validateStatus(status) {
-  //   // 默认设置
-  //   // return status >= 200 && status < 300;
-  //   return status === 200;
-  // },
-
-  // 自定义参数
-  // 是否需要全局loading
-  // loading: true,
-  // 是否禁用自动的错误提示
   disabledErrorMessage: false,
 };
 
@@ -64,7 +53,7 @@ instance.interceptors.request.use(
       // 是否打开全局loading
       loading,
       method,
-      // 是否是否吧参数处理成formData形式
+      // 是参数处否是否吧理成formData形式
       serialize,
       // API的版本号
       apiVersion = 1,
@@ -121,12 +110,20 @@ instance.interceptors.response.use(
       }
     }
     let { code, msg } = data || {};
-    if (code !== '0') {
-      if (url.includes('/api/login/out')) {
+    if (code !== 0) {
+      if (url.includes('/api/auth/logout')) {
         return Promise.reject(data);
       }
-      store.commit('global/errorMessage', msg);
+      if (!disabledErrorMessage) {
+        if (
+          store.state.user.userInfoError &&
+          !store.state.user.userInfoError.visible
+        ) {
+          store.commit('global/errorMessage', msg);
+        }
+      }
       const codeList = ['10000100', '10000102'];
+      // TODO token鉴权失败
       if (codeList.includes(code)) {
         removeToken();
         window.location.replace(`${window.location.origin}/#/login`);
@@ -136,7 +133,7 @@ instance.interceptors.response.use(
     return isArrayBuffer ? Promise.reject(data) : data;
   },
   (error) => {
-    /* 如果报错，会强制关闭全局loading */
+    // 如果报错，会强制关闭全局loading
     store.commit('global/forceCloseLoading');
     expandToken();
     const { response, request, config, message } = error;
@@ -148,13 +145,10 @@ instance.interceptors.response.use(
       console.log('网络出错：Network Error');
       store.commit('global/errorMessage', '网络连接异常');
     } else if (response) {
-      // The request was made and the server responded with a status code
-      // that falls out of the range of 2xx
       const { status, data } = response;
       let { msg } = data || {};
       if (status === 200) {
-        // msg = '正常'
-        // console.log(msg);
+        // 正常
       } else if (status === 401) {
         console.log('请求401: 无权限');
         msg = '系统错误，请稍候再试！';
@@ -174,12 +168,8 @@ instance.interceptors.response.use(
       }
       if (!disabledErrorMessage) store.commit('global/errorMessage', msg);
     } else if (request) {
-      // The request was made but no response was received
-      // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-      // http.ClientRequest in node.js
       console.log('request====>', request);
     } else {
-      // Something happened in setting up the request that triggered an Error
       console.log('error.message', message);
     }
     return Promise.reject(error);

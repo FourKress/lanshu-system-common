@@ -1,9 +1,6 @@
 window.LANSHU_CONFIG = {
-  baseURL: '',
-  // 版本号
+  baseURL: '/api',
   apiVersion: 'v1',
   authKey: 'authKey',
-  domain: 'authDomain',
-  defaultUrl: '',
-  clientId: '',
+  domain: location.hostname,
 };
