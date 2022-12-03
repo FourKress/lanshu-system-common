@@ -193,7 +193,7 @@ export default {
     },
     logOutSys() {
       this.$https
-        .post('/login/out', {
+        .post('/auth/logout', {
           disabledErrorMessage: true,
           userId: this.userInfo.userId,
         })

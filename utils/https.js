@@ -23,9 +23,6 @@ const expandToken = _.debounce(
   { leading: true, trailing: false },
 );
 
-//  全局变量
-const { baseURL } = LANSHU_CONFIG || {};
-
 const DEFAULT_HTTP_OPTIONS = {
   timeout: 20000,
   withCredentials: false,
@@ -33,7 +30,6 @@ const DEFAULT_HTTP_OPTIONS = {
   headers: {
     'Content-Type': 'application/json',
   },
-  baseURL,
   paramsSerializer(params) {
     return qs.stringify(params, { arrayFormat: 'repeat' });
   },
